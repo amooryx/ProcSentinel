@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./banner.svg" alt="ProcSentinel" width="800">
+</div>
+
 # ProcSentinel v3 — Memory Forensics Platform
 
 **Detection of Masqueraded Processes in Volatile Memory**
