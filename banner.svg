@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="118" viewBox="0 0 800 118" role="img" aria-label="ProcSentinel">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#b96bff" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#b96bff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#b96bff" stop-opacity="0.5"/>
+    </linearGradient>
+    <clipPath id="f"><rect x="1" y="1" width="798" height="116" rx="9"/></clipPath>
+    <clipPath id="t"><rect x="34" y="34" width="0" height="30">
+      <animate attributeName="width" values="0;0;190;190;0;0"
+               keyTimes="0;0.06;0.34;0.90;0.96;1" dur="7s" repeatCount="indefinite"/>
+    </rect></clipPath>
+  </defs>
+
+  <rect width="800" height="118" rx="9" fill="#05080d"/>
+  <rect x="0.5" y="0.5" width="799" height="117" rx="9" fill="none"
+        stroke="#b96bff" stroke-opacity="0.35"/>
+
+  <g clip-path="url(#f)">
+    <g>
+      <rect x="-170" y="0" width="170" height="118" fill="url(#g)"/>
+      <animateTransform attributeName="transform" type="translate"
+                        values="0,0;980,0" dur="7s" repeatCount="indefinite"/>
+    </g>
+    <rect x="34" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.23s" repeatCount="indefinite"/></rect><rect x="60" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="0.75s" repeatCount="indefinite"/></rect><rect x="86" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="0.24s" repeatCount="indefinite"/></rect><rect x="112" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.58s" repeatCount="indefinite"/></rect><rect x="138" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="0.78s" repeatCount="indefinite"/></rect><rect x="164" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.2s" repeatCount="indefinite"/></rect><rect x="190" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="0.29s" repeatCount="indefinite"/></rect><rect x="216" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="2.02s" repeatCount="indefinite"/></rect><rect x="242" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="0.17s" repeatCount="indefinite"/></rect><rect x="268" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.71s" repeatCount="indefinite"/></rect><rect x="294" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="0.31s" repeatCount="indefinite"/></rect><rect x="320" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.63s" repeatCount="indefinite"/></rect><rect x="346" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.08s" repeatCount="indefinite"/></rect><rect x="372" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.17s" repeatCount="indefinite"/></rect><rect x="398" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.93s" repeatCount="indefinite"/></rect><rect x="424" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="2.11s" repeatCount="indefinite"/></rect><rect x="450" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.96s" repeatCount="indefinite"/></rect><rect x="476" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.36s" repeatCount="indefinite"/></rect><rect x="502" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="0.74s" repeatCount="indefinite"/></rect><rect x="528" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.38s" repeatCount="indefinite"/></rect><rect x="554" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="0.92s" repeatCount="indefinite"/></rect><rect x="580" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="1.39s" repeatCount="indefinite"/></rect><rect x="606" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="2.12s" repeatCount="indefinite"/></rect><rect x="632" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="0.36s" repeatCount="indefinite"/></rect><rect x="658" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="0.47s" repeatCount="indefinite"/></rect><rect x="684" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="0.71s" repeatCount="indefinite"/></rect><rect x="710" y="88" width="14" height="2" fill="#b96bff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.9;0.25" dur="2.2s" begin="2.12s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <text x="776" y="28" text-anchor="end"
+        font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+        font-size="11" fill="#b96bff" opacity="0.65" letter-spacing="2">DEFENSIVE</text>
+
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19">
+    <g clip-path="url(#t)">
+      <text x="34" y="58" fill="#b96bff">$ ./ProcSentinel</text>
+    </g>
+    <rect x="228" y="40" width="10" height="22" fill="#b96bff">
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.4;0.5;0.9;1"
+               dur="1.05s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
