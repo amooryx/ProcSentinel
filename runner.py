@@ -22,7 +22,7 @@ Notes:
 - Places "-r csv" BEFORE plugin name when format=csv (Vol3 quirk).
 """
 
-import argparse, json, os, re, shutil, subprocess, sys, time, textwrap
+import argparse, csv, json, os, re, shutil, subprocess, sys, time, textwrap
 import logging
 import html as _html
 import unicodedata
@@ -238,22 +238,43 @@ def detect_os(info_text: str) -> str:
 # ---------------------------
 
 def parse_csv(text: str) -> List[Dict[str, str]]:
-    lines = [l for l in text.splitlines() if l.strip()]
-    if not lines:
+    if not text or not text.strip():
         log.debug("parse_csv received empty text or only whitespace lines.")
         return []
-    header_idx = 0
-    for i, l in enumerate(lines[:10]):
-        if "," in l and not l.lower().startswith("volatility 3"):
-            header_idx = i
+
+    reader = csv.reader(StringIO(text))
+    header = None
+    for _ in range(10):
+        try:
+            record = next(reader)
+        except StopIteration:
             break
-    hdr = [h.strip() for h in lines[header_idx].split(",")]
+
+        if len(record) > 1 and not record[0].strip().lower().startswith("volatility 3"):
+            header = [field.strip() for field in record]
+            break
+
+    if header is None:
+        log.debug("parse_csv could not find a CSV header in the first 10 records.")
+        return []
+
     rows = []
-    for l in lines[header_idx+1:]:
-        parts = l.split(",", len(hdr)-1)
-        parts += [""] * (len(hdr)-len(parts))
-        rows.append({hdr[i]: parts[i].strip() for i in range(len(hdr))})
-    log.debug(f"parse_csv parsed {len(rows)} rows with headers: {hdr}")
+    malformed_rows = 0
+    for record in reader:
+        if not record or not any(field.strip() for field in record):
+            continue
+        if len(record) > len(header):
+            malformed_rows += 1
+            continue
+        record += [""] * (len(header) - len(record))
+        rows.append({
+            header[i]: record[i].strip()
+            for i in range(len(header))
+        })
+
+    if malformed_rows:
+        log.debug(f"parse_csv skipped {malformed_rows} rows with more fields than the header.")
+    log.debug(f"parse_csv parsed {len(rows)} rows with headers: {header}")
     return rows
 
 

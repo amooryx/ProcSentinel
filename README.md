@@ -144,5 +144,13 @@ Place dumps in `memory/` next to `app.py`.
 | services_suspicious | Malicious service from writable path | T1543.003 |
 | correlation_masq_and_hidden | Masquerade + hidden process combined | T1036+T1014 |
 
----
+## Process inventory parsing limitations
 
+Volatility CSV output is parsed with CSV quoting rules, so quoted process fields
+may contain commas. Rows containing more fields than the detected header are
+skipped rather than assigned to the wrong columns. Incomplete, malformed, or
+unsupported Volatility plugin output can still result in incomplete process
+inventories and detections; verify the saved plugin artifacts when analysis
+output appears incomplete.
+
+---
